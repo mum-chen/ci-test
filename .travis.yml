@@ -5,4 +5,4 @@ compiler: gcc
 script: make
 
 before_install:
-	- test -n $CC && unset CC
+    test -n $CC && unset CC
