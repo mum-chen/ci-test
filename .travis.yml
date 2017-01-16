@@ -1,7 +1,8 @@
 language: c
 
-install:
-	- "make"
+compiler: gcc
 
-script:
-	- ".hello"
+script: make
+
+before_install:
+	- test -n $CC && unset CC
